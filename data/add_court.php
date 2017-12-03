@@ -25,8 +25,22 @@ if (!empty($errors)) {
 
     $sql = "INSERT INTO tbl_court VALUES (NULL, '".$barangay."', '".$court_name."', '".$date."', '".$date."', '".$status."')";
         if ($conn->query($sql) === TRUE) {
-            $data['success'] = true;
-            $data['message'] = 'Success!';
+
+            $last_id = $conn->insert_id;
+            $start=strtotime('08:00');
+            $end=strtotime('22:00');
+            for ($i=$start;$i<=$end;$i = $i + 60*60)
+            {
+                $hour = date('H:i:s',$i);
+                $plushour = date('H:i:s',$i + 60*60);
+                $newhour = $hour .'-'. $plushour;
+                $hour = "INSERT INTO tbl_court_hours VALUES(NULL, '".$last_id."','".$newhour."','".$date."','".$date."','1')";
+                if ($conn->query($hour) === TRUE) {
+                    $data['success'] = true;
+                    $data['message'] = 'Success!';
+                }
+            }
+
         } else {
             $data['success'] = false;
         }

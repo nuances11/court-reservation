@@ -16,6 +16,7 @@
 <script src="<?= BASE_URL ?>assets/js/moment.min.js"></script>
 <script src="<?= BASE_URL ?>assets/js/fullcalendar-2/fullcalendar.min.js"></script>
 <script src="<?= BASE_URL ?>assets/js/neon-calendar-2.js"></script>
+<script src="<?= BASE_URL ?>plugins/toastr/toastr.min.js"></script>
 
 <!-- Bottom scripts (common) -->
 <script src="<?= BASE_URL ?>assets/js/gsap/TweenMax.min.js"></script>
@@ -34,6 +35,8 @@
 <script src="<?= BASE_URL ?>assets/js/rickshaw/vendor/d3.v3.js"></script>
 <script src="<?= BASE_URL ?>assets/js/rickshaw/rickshaw.min.js"></script>
 <script src="<?= BASE_URL ?>assets/js/neon-chat.js"></script>
+<script src="<?= BASE_URL ?>assets/js/user.js"></script>
+<script src="<?= BASE_URL ?>assets/js/bootstrap-datepicker.js"></script>
 
 
 <!-- JavaScripts initializations and stuff -->

@@ -35,10 +35,12 @@ include_once '../config/constants.php';
     <link rel="stylesheet" href="<?php echo BASE_URL ?>assets/css/neon-theme.css">
     <link rel="stylesheet" href="<?php echo BASE_URL ?>assets/css/neon-forms.css">
     <link rel="stylesheet" href="<?php echo BASE_URL ?>assets/css/custom.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL ?>assets/css/user.css"> 
 
     <link rel="stylesheet" href="<?php echo BASE_URL ?>assets/js/datatables/datatables.css">
 	<link rel="stylesheet" href="<?php echo BASE_URL ?>assets/js/select2/select2-bootstrap.css">
     <link rel="stylesheet" href="<?php echo BASE_URL ?>assets/js/select2/select2.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL ?>plugins/toastr/toastr.min.css">
     
 
     <script src="<?php echo BASE_URL ?>assets/js/jquery-1.11.3.min.js"></script>
